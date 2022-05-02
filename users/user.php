@@ -3,7 +3,6 @@
     class User {
         private $name;
         private $surname;
-        private $discount = 0;
         private $validCc;
 
         public function __construct($_name, $_surname, $_validCc)
