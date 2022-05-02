@@ -7,21 +7,30 @@
         private $age;
         private $race;
 
-        // public function __construct($_name, $_price, $_pet)
-        // {
-        //     $this->name = $_name;
-        //     $this->price = $_price;
-        //     $this->pet = $_pet;
-        // }
+        public function __construct($_name, $_price, $_pet, $_type)
+        {
+            parent::__construct($_name, $_price, $_pet);
+            $this->type = $_type;
+        }
         
-        // public function setBrand($_brand)
-        // {
-        //     $this->brand = $_brand;
-        // }
+        public function setAge($_age)
+        {
+            $this->age = $_age;
+        }
 
-        // public function getBrand()
-        // {
-        //     $this->brand;
-        // }
+        public function getAge()
+        {
+            $this->age;
+        }
+
+        public function setRace($_race)
+        {
+            $this->race = $_race;
+        }
+
+        public function getRace()
+        {
+            $this->race;
+        }
     }
 ?>
