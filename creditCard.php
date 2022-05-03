@@ -1,17 +1,17 @@
 <?php
     class CreditCard {
         private $owner;
-        private $number;
+        private $creditCardID;
         private $expDate;
 
-        public function __construct($_owner, $_number, $_expDate)
+        public function __construct($_owner, $_creditCardID, $_expDate)
         {
             $this->owner = $_owner;
-            $this->number = $_number;
+            $this->creditCardID = $_creditCardID;
             $this->expDate = $_expDate;
         }
 
-        public function isValid ()
+        public function isValid()
         {
           $dateStr =  date_create_from_format('m/Y', $this->expDate);
           $dateFormatted = date_format($dateStr, 'M Y');
