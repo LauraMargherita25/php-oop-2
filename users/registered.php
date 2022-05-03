@@ -3,12 +3,10 @@
     class Regitered extends User {
         protected $discount = 20;
 
-        // public function __construct($_name, $_surname)
-        // {
-        //     // $this->name = $_name;
-        //     // $this->surname = $_surname;
-        //     // parent::__construct($_name, $_surname);
-        // }
+        public function __construct($_name)
+        {
+            parent::__construct($_name);
+        }
     }
 
     

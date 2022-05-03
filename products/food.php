@@ -20,7 +20,7 @@
 
         public function getAge()
         {
-            $this->age;
+            return $this->age;
         }
 
         public function setRace($_race)
@@ -30,7 +30,7 @@
 
         public function getRace()
         {
-            $this->race;
+            return $this->race;
         }
     }
 ?>

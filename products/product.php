@@ -1,10 +1,10 @@
 <!-- Qui definisco il prodotto in generale -->
 <?php
-    class Product {
-        private $name;
-        private $price;
-        private $brand;
-        private $pet;
+    abstract class Product {
+        protected $name;
+        protected $price;
+        protected $brand;
+        protected $pet;
 
         public function __construct($_name, $_price, $_pet)
         {
@@ -25,12 +25,10 @@
 
         public function getDiscontedPrice($_discount)
         {
-            $this->price -= 0.2;
+            // $discountedPrice = $this->price - $_discount
+            return $this->price -= $_discount * 20 / 100 ;
         }
     }
 
-    // $prodotto1 = new Product('croccchette', 16.99, 'cane');
-    // $prodotto1->setBrand('monge');
-    // var_dump($prodotto1)
 ?>
 
