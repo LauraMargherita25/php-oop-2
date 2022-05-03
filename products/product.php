@@ -22,6 +22,11 @@
         {
             $this->brand;
         }
+
+        public function getDiscontedPrice($_discount)
+        {
+            $this->price -= 0.2;
+        }
     }
 
     // $prodotto1 = new Product('croccchette', 16.99, 'cane');

@@ -11,10 +11,11 @@ include_once __DIR__  . '/users/unregisterd.php';
 
     $prodotto1 = new Food('croccchette', 16.99, 'cane', 'secco');
     $prodotto1->setBrand('monge');
+    // $prodotto1->getDiscountedPrice($utente1->setDiscount(20));
     // $prodotto1->setAge('junior');
     var_dump($prodotto1);
 
-    $utente1 = new Regitered('Franca', 'Cocco', true, 20);
+    $utente1 = new Regitered();
     var_dump($utente1);
 
    
